@@ -1,0 +1,8 @@
+<main>
+  <h1 [ngClass]="{'admin' : isAdmin}">Bonjour !</h1>
+  <button type="button">View</button>
+  <button *ngIf="isAdmin" type="button" >Edit</button>
+  <button (click)="changeAdminStatus()" type="button">Are you admin ?</button>
+</main>
+
+<router-outlet />
